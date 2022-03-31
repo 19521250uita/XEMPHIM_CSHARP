@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E92A07E-638B-4407-BCA9-3C038FCF6C75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XEMPHIMCSHARP</RootNamespace>
+    <AssemblyName>XEMPHIMCSHARP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="resouce\icon\LOGO.png" />
+    <Content Include="resouce\image\hanhdong\buidoicholon.jpg" />
+    <Content Include="resouce\image\hanhdong\chimuoi3.jpg" />
+    <Content Include="resouce\image\hanhdong\chipheongoaitruyen.jpg" />
+    <Content Include="resouce\image\hanhdong\dibiet.jpg" />
+    <Content Include="resouce\image\hanhdong\dinhmusuong.jpg" />
+    <Content Include="resouce\image\hanhdong\haiphuong.jpg" />
+    <Content Include="resouce\image\hanhdong\huongga.jpg" />
+    <Content Include="resouce\image\hanhdong\sat-thu-mat-danh-47-2-ngoisao.vn.jpg" />
+    <Content Include="resouce\image\hanhdong\shangchi.jpg" />
+    <Content Include="resouce\image\hanhdong\soicodoc.jpg" />
+    <Content Include="resouce\image\hanhdong\startrek.jpg" />
+    <Content Include="resouce\image\KINdi\Bí ẩn song sinh.jpg" />
+    <Content Include="resouce\image\KINdi\Bóng đè.jpg" />
+    <Content Include="resouce\image\KINdi\Bắc kim thang.jpg" />
+    <Content Include="resouce\image\KINdi\chung cư.jpg" />
+    <Content Include="resouce\image\KINdi\Căn hộ của quỷ.jpg" />
+    <Content Include="resouce\image\KINdi\gã hề ma quái.jpg" />
+    <Content Include="resouce\image\KINdi\mặt nạ máu.jpg" />
+    <Content Include="resouce\image\KINdi\mỹ nhân ngư.jpg" />
+    <Content Include="resouce\image\KINdi\oán.jpg" />
+    <Content Include="resouce\image\KINdi\ám ânhr.jpg" />
+    <Content Include="resouce\image\PHImler\cậu vàng.jpg" />
+    <Content Include="resouce\image\PHImler\huyen-thoai-bat-tu-481309.jpg" />
+    <Content Include="resouce\image\PHImler\kungfu-pho-481315.jpg" />
+    <Content Include="resouce\image\PHImler\Nổi-nhớ-hoá-băng.jpg" />
+    <Content Include="resouce\image\PHImler\truy-sat-481316.jpg" />
+    <Content Include="resouce\image\PHImler\trạn quyenhf.jpg" />
+    <Content Include="resouce\image\PHImler\tâm sắc tấm.jpg" />
+    <Content Include="resouce\image\PHImler\đôi mắt âm dương.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\7 ngày yêu.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\Bao giờ có yêu nhau.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\chị chị em em.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\mắt biếc.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\nhắm mắt thấy mùa hè.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\năm bước để yêu.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\tình yêu và tham vọng.jpg" />
+    <Content Include="resouce\image\TÌnh cảm\yêu.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
